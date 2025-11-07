@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get in touch</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contact-wrapper">
+        <div class="container-fluid">
+            <div class="row g-0 min-vh-100">
+                <!-- Left Column - Contact Information -->
+                <div class="col-lg-5 contact-info-section">
+                    <div class="contact-info-wrapper">
+                        <div class="back-link">
+                            <a href="index.html">
+                                <i class="fas fa-arrow-left"></i> Back to login
+                            </a>
+                        </div>
+
+                        <div class="contact-header">
+                            <div class="contact-badge">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M8 1L10.5 6L16 7L12 11L13 16L8 13.5L3 16L4 11L0 7L5.5 6L8 1Z" fill="currentColor"/>
+                                </svg>
+                                <span>Get in touch</span>
+                            </div>
+                            <h1 class="contact-title">Let's talk about your project</h1>
+                            <p class="contact-subtitle">Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+                        </div>
+
+                        <!-- Contact Methods -->
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h3>Email us</h3>
+                                    <p>Our team is here to help</p>
+                                    <a href="mailto:hello@company.com">hello@company.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h3>Call us</h3>
+                                    <p>Mon-Fri from 9am to 6pm</p>
+                                    <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h3>Visit us</h3>
+                                    <p>Come say hello at our office</p>
+                                    <address>
+                                        100 Smith Street<br>
+                                        Melbourne VIC 3000<br>
+                                        Australia
+                                    </address>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-comments"></i>
+                                </div>
+                                <div class="method-info">
+                                    <h3>Live chat</h3>
+                                    <p>Our support team is available</p>
+                                    <a href="#" class="chat-link">Start a conversation</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Links -->
+                        <div class="social-links">
+                            <p class="social-label">Follow us</p>
+                            <div class="social-icons">
+                                <a href="#" aria-label="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column - Contact Form -->
+                <div class="col-lg-7 contact-form-section">
+                    <div class="form-wrapper">
+                        <div class="form-header">
+                            <h2 class="form-title">Send us a message</h2>
+                            <p class="form-subtitle">Fill out the form below and we'll get back to you within 24 hours</p>
+                        </div>
+
+                        <form id="contactForm" novalidate>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="firstName" class="form-label">First name</label>
+                                        <input
+                                            type="text"
+                                            id="firstName"
+                                            name="firstName"
+                                            class="form-control modern-input"
+                                            placeholder="John"
+                                            required
+                                        >
+                                        <div class="error-message" id="firstNameError"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="lastName" class="form-label">Last name</label>
+                                        <input
+                                            type="text"
+                                            id="lastName"
+                                            name="lastName"
+                                            class="form-control modern-input"
+                                            placeholder="Doe"
+                                            required
+                                        >
+                                        <div class="error-message" id="lastNameError"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    class="form-control modern-input"
+                                    placeholder="you@company.com"
+                                    required
+                                >
+                                <div class="error-message" id="emailError"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone number <span class="optional">(optional)</span></label>
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    class="form-control modern-input"
+                                    placeholder="+1 (555) 000-0000"
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject</label>
+                                <select
+                                    id="subject"
+                                    name="subject"
+                                    class="form-control modern-input"
+                                    required
+                                >
+                                    <option value="">Choose a topic</option>
+                                    <option value="general">General inquiry</option>
+                                    <option value="support">Technical support</option>
+                                    <option value="sales">Sales question</option>
+                                    <option value="partnership">Partnership opportunity</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <div class="error-message" id="subjectError"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    class="form-control modern-input"
+                                    rows="5"
+                                    placeholder="Tell us more about your inquiry..."
+                                    required
+                                ></textarea>
+                                <div class="error-message" id="messageError"></div>
+                            </div>
+
+                            <div class="form-check-wrapper">
+                                <input
+                                    type="checkbox"
+                                    class="form-check-input"
+                                    id="privacy"
+                                    name="privacy"
+                                    required
+                                >
+                                <label class="form-check-label" for="privacy">
+                                    I agree to the <a href="#" class="privacy-link">privacy policy</a> and understand my data will be processed according to it
+                                </label>
+                                <div class="error-message" id="privacyError"></div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+                                <span class="btn-text">Send message</span>
+                                <span class="btn-loader" style="display: none;">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-dasharray="50" stroke-dashoffset="25">
+                                            <animateTransform attributeName="transform" type="rotate" from="0 10 10" to="360 10 10" dur="1s" repeatCount="indefinite"/>
+                                        </circle>
+                                    </svg>
+                                </span>
+                            </button>
+
+                            <div class="success-message" id="successMessage" style="display: none;">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Message sent successfully! We'll get back to you soon.</span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Form validation and submission
+        const contactForm = document.getElementById('contactForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const btnText = submitBtn.querySelector('.btn-text');
+        const btnLoader = submitBtn.querySelector('.btn-loader');
+        const successMessage = document.getElementById('successMessage');
+
+        const fields = {
+            firstName: document.getElementById('firstName'),
+            lastName: document.getElementById('lastName'),
+            email: document.getElementById('email'),
+            subject: document.getElementById('subject'),
+            message: document.getElementById('message'),
+            privacy: document.getElementById('privacy')
+        };
+
+        const errors = {
+            firstName: document.getElementById('firstNameError'),
+            lastName: document.getElementById('lastNameError'),
+            email: document.getElementById('emailError'),
+            subject: document.getElementById('subjectError'),
+            message: document.getElementById('messageError'),
+            privacy: document.getElementById('privacyError')
+        };
+
+        // Validate email
+        function isValidEmail(email) {
+            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        }
+
+        // Validate individual field
+        function validateField(fieldName) {
+            const field = fields[fieldName];
+            const error = errors[fieldName];
+
+            if (!field) return true;
+
+            let isValid = true;
+            let errorMessage = '';
+
+            if (field.type === 'checkbox') {
+                if (!field.checked) {
+                    isValid = false;
+                    errorMessage = 'You must agree to the privacy policy';
+                }
+            } else if (field.tagName === 'SELECT') {
+                if (!field.value) {
+                    isValid = false;
+                    errorMessage = 'Please select a subject';
+                }
+            } else if (field.type === 'email') {
+                if (!field.value.trim()) {
+                    isValid = false;
+                    errorMessage = 'Email is required';
+                } else if (!isValidEmail(field.value.trim())) {
+                    isValid = false;
+                    errorMessage = 'Please enter a valid email';
+                }
+            } else if (field.required) {
+                if (!field.value.trim()) {
+                    isValid = false;
+                    errorMessage = `${field.previousElementSibling.textContent.replace('*', '').trim()} is required`;
+                }
+            }
+
+            if (error) {
+                error.textContent = errorMessage;
+            }
+
+            if (isValid) {
+                field.classList.remove('error');
+            } else {
+                field.classList.add('error');
+            }
+
+            return isValid;
+        }
+
+        // Add blur validation
+        Object.keys(fields).forEach(fieldName => {
+            const field = fields[fieldName];
+            if (field) {
+                field.addEventListener('blur', () => validateField(fieldName));
+                field.addEventListener('input', () => {
+                    if (field.classList.contains('error')) {
+                        validateField(fieldName);
+                    }
+                });
+            }
+        });
+
+        // Form submission
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Clear previous errors
+            Object.values(errors).forEach(error => {
+                if (error) error.textContent = '';
+            });
+            Object.values(fields).forEach(field => {
+                if (field) field.classList.remove('error');
+            });
+            successMessage.style.display = 'none';
+
+            // Validate all fields
+            let isValid = true;
+            Object.keys(fields).forEach(fieldName => {
+                if (!validateField(fieldName)) {
+                    isValid = false;
+                }
+            });
+
+            if (!isValid) {
+                // Focus first error
+                const firstError = Object.keys(fields).find(key => fields[key].classList.contains('error'));
+                if (firstError) {
+                    fields[firstError].focus();
+                }
+                return;
+            }
+
+            // Show loading state
+            submitBtn.disabled = true;
+            btnText.style.display = 'none';
+            btnLoader.style.display = 'block';
+
+            // Simulate API call
+            setTimeout(() => {
+                // Reset button state
+                submitBtn.disabled = false;
+                btnText.style.display = 'block';
+                btnLoader.style.display = 'none';
+
+                // Show success message
+                successMessage.style.display = 'flex';
+
+                // Reset form
+                contactForm.reset();
+
+                // Hide success message after 5 seconds
+                setTimeout(() => {
+                    successMessage.style.display = 'none';
+                }, 5000);
+            }, 1500);
+        });
+    </script>
+</body>
+</html>

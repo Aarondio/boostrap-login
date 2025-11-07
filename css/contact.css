@@ -1,0 +1,516 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #fafafa;
+}
+
+/* Contact Wrapper */
+.contact-wrapper {
+    min-height: 100vh;
+}
+
+/* Left Column - Contact Information */
+.contact-info-section {
+    background: linear-gradient(145deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+    color: white;
+    padding: 3rem 2.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-info-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(ellipse at top left, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+                radial-gradient(ellipse at bottom right, rgba(147, 51, 234, 0.08) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.contact-info-wrapper {
+    position: relative;
+    z-index: 2;
+    max-width: 480px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Back Link */
+.back-link {
+    margin-bottom: 2.5rem;
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.back-link a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 0.875rem;
+    transition: color 0.2s ease;
+}
+
+.back-link a:hover {
+    color: white;
+}
+
+/* Contact Header */
+.contact-header {
+    margin-bottom: 3rem;
+}
+
+.contact-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.875rem;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    animation: fadeInUp 0.6s ease-out 0.1s both;
+}
+
+.contact-badge svg {
+    color: #3b82f6;
+}
+
+.contact-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+    animation: fadeInUp 0.6s ease-out 0.2s both;
+}
+
+.contact-subtitle {
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    color: rgba(255, 255, 255, 0.75);
+    animation: fadeInUp 0.6s ease-out 0.3s both;
+}
+
+/* Contact Methods */
+.contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.contact-method {
+    display: flex;
+    gap: 1.125rem;
+    animation: fadeInUp 0.6s ease-out both;
+}
+
+.contact-method:nth-child(1) { animation-delay: 0.4s; }
+.contact-method:nth-child(2) { animation-delay: 0.5s; }
+.contact-method:nth-child(3) { animation-delay: 0.6s; }
+.contact-method:nth-child(4) { animation-delay: 0.7s; }
+
+.method-icon {
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.contact-method:hover .method-icon {
+    background: rgba(59, 130, 246, 0.15);
+    border-color: rgba(59, 130, 246, 0.3);
+    transform: translateY(-2px);
+}
+
+.method-icon i {
+    font-size: 1.125rem;
+    color: #3b82f6;
+}
+
+.method-info h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: white;
+}
+
+.method-info p {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 0.375rem;
+}
+
+.method-info a {
+    font-size: 0.9375rem;
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.method-info a:hover {
+    color: #60a5fa;
+}
+
+.method-info address {
+    font-style: normal;
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+/* Social Links */
+.social-links {
+    margin-top: auto;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    animation: fadeInUp 0.6s ease-out 0.8s both;
+}
+
+.social-label {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 1rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 0.2s ease;
+}
+
+.social-icons a:hover {
+    background: rgba(59, 130, 246, 0.15);
+    border-color: rgba(59, 130, 246, 0.3);
+    color: #3b82f6;
+    transform: translateY(-2px);
+}
+
+/* Right Column - Contact Form */
+.contact-form-section {
+    background: #fafafa;
+    padding: 3rem 2.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.form-wrapper {
+    width: 100%;
+    max-width: 580px;
+    margin: 0 auto;
+    animation: fadeIn 0.6s ease-out;
+}
+
+.form-header {
+    margin-bottom: 2.5rem;
+}
+
+.form-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.01em;
+}
+
+.form-subtitle {
+    font-size: 0.9375rem;
+    color: #64748b;
+    line-height: 1.6;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+}
+
+.optional {
+    font-weight: 400;
+    color: #94a3b8;
+}
+
+.modern-input {
+    width: 100%;
+    padding: 0.75rem 0.875rem;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 10px;
+    font-size: 0.9375rem;
+    transition: all 0.15s ease;
+    background: white;
+    color: #0f172a;
+    font-family: 'Inter', sans-serif;
+}
+
+.modern-input:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.08);
+}
+
+.modern-input.error {
+    border-color: #ef4444;
+}
+
+.modern-input.error:focus {
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.08);
+}
+
+.modern-input::placeholder {
+    color: #94a3b8;
+}
+
+textarea.modern-input {
+    resize: vertical;
+    min-height: 120px;
+}
+
+select.modern-input {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%2364748b' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.875rem center;
+    padding-right: 2.5rem;
+}
+
+.error-message {
+    font-size: 0.8125rem;
+    color: #ef4444;
+    margin-top: 0.5rem;
+    min-height: 1.25rem;
+}
+
+/* Form Check */
+.form-check-wrapper {
+    margin-bottom: 1.75rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.form-check-input {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.625rem;
+    margin-top: 0.125rem;
+    cursor: pointer;
+    accent-color: #3b82f6;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.form-check-label {
+    font-size: 0.875rem;
+    color: #475569;
+    cursor: pointer;
+    user-select: none;
+    line-height: 1.5;
+}
+
+.privacy-link {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.privacy-link:hover {
+    color: #2563eb;
+}
+
+/* Submit Button */
+.btn-submit {
+    width: 100%;
+    padding: 0.8125rem 1.25rem;
+    background: #0f172a;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    position: relative;
+}
+
+.btn-submit:hover:not(:disabled) {
+    background: #1e293b;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
+}
+
+.btn-submit:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+.btn-submit:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.btn-loader {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Success Message */
+.success-message {
+    display: none;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.25rem;
+    background: #ecfdf5;
+    border: 1px solid #6ee7b7;
+    border-radius: 10px;
+    color: #065f46;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-top: 1.25rem;
+}
+
+.success-message i {
+    color: #10b981;
+    font-size: 1.125rem;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 991.98px) {
+    .contact-info-section,
+    .contact-form-section {
+        padding: 2.5rem 2rem;
+    }
+
+    .contact-title {
+        font-size: 2.125rem;
+    }
+
+    .form-title {
+        font-size: 1.625rem;
+    }
+
+    .social-links {
+        margin-top: 2.5rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .contact-info-section {
+        min-height: auto;
+    }
+
+    .contact-form-section {
+        padding: 2rem 1.5rem;
+    }
+
+    .contact-title {
+        font-size: 1.875rem;
+    }
+
+    .form-title {
+        font-size: 1.5rem;
+    }
+
+    .contact-methods {
+        gap: 1.5rem;
+    }
+
+    .form-wrapper {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .contact-info-section,
+    .contact-form-section {
+        padding: 2rem 1.25rem;
+    }
+
+    .contact-title {
+        font-size: 1.75rem;
+    }
+
+    .form-title {
+        font-size: 1.375rem;
+    }
+
+    .method-icon {
+        width: 44px;
+        height: 44px;
+    }
+
+    .method-icon i {
+        font-size: 1rem;
+    }
+}
